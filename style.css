@@ -1,0 +1,191 @@
+/* Created by ֎₳¥Ʉ$Ħ֎ */
+
+body {
+    font-size: 15pt;
+    overflow:hidden;
+    position:fixed;
+    background-color:#d1d9eb;
+}
+*{
+  margin: 0;
+  user-select:none;
+  padding: 0;
+}
+
+.fa-fill{
+  position: absolute;
+  z-index: 190;
+  color: blueviolet;
+  font-size: 4vh;
+  left:0;
+  right:0;
+  top: 20%;
+  bottom: 80%;
+  margin: auto;
+}
+.fa-eraser{
+  position: absolute;
+  z-index: 190;
+  color: #03FFF9;
+  font-size: 4vh;
+  left: 0;
+  right: 0;
+  top: 20%;
+  bottom: 80%;
+  margin: auto;
+}
+#canvas{
+    position:absolute;
+    z-index:1;
+    left:5vw;
+    box-shadow: 1vh 1vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+    -0.5vh -0.5vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+    top: 15vh;
+    border-radius: 1vh;
+}
+input[type="color"]{
+  border: none;
+}
+#whole{
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  overflow: hidden;
+}
+#sar{
+    position:absolute;
+    background-color:#d1d9eb;
+    height:10vh;
+    width:94vw;
+    z-index:100;
+    border-radius:3vw;
+    box-shadow: 1vh 1vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+    -0.5vh -0.5vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+    left: 3vw;
+    right: 3vw;
+    top: 1vh;
+}
+#cl{
+    background:transparent;
+    height:80%;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    width: 11%;
+    left: 3vw;
+    border-radius: 10vw;
+    box-shadow: 1vh 1vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+    -0.5vh -0.5vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+}
+input[type="color"]::-webkit-color-swatch{
+  border-radius: 10vw;
+  height: 99%;
+  border: none;
+}
+input[type="color"]::-moz-color-swatch {
+  border-radius: 10vw;
+  height: 99%;
+  border: none;
+}
+input{
+    z-index:100;
+}
+#ran{
+    position:absolute;
+    left:36vw;
+    height: 2vh;
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    background-color: #d1d9eb;
+    box-shadow: 0.6vh 0.6vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+    -0.6vh -0.6vh 2vh -0.5vh rgba(255, 255, 255, 0.7),
+    inset 0.6vh 0.6vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+   inset -0.6vh -0.6vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+    width: 25vw;
+}
+::-webkit-slider-thumb{
+ -webkit-appearance: none;
+  appearance: none;
+  width: 3vh;
+  height: 3vh;
+  border-radius:1vw;
+  background: #d1d9eb;
+  cursor: pointer;
+ box-shadow: inset 0.3vh 0.3vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+  inset -0.3vh -0.3vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+}
+::-moz-range-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 1vw;
+  background: #d1d9eb;
+  cursor: pointer;
+  box-shadow: inset 0.3vh 0.3vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+    inset -0.3vh -0.3vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+}
+#clo{
+    position:absolute;
+    right:6vw;
+    top:1vh;
+    border-radius: 10vw;
+    background: transparent;
+    box-shadow: 1vh 1vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+    -0.5vh -0.5vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+    height:80%;
+    width:11%;
+}
+#clrbtn{
+    position:absolute;
+    height:7vh;
+    top:1.5vh;
+    left: 15vw;
+    border-radius: 10vw;
+    font-size: 2vw;
+    border-style: none;
+    outline: none;
+    background-color: #d1d9eb;
+    border: none;
+    box-shadow: 1vh 1vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+    -0.5vh -0.5vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+    width: 7vw;
+}
+#fill{
+  height: 7vh;
+  width: 9vw;
+  position: absolute;
+  left: 66vw;
+  top: 0;
+  bottom: 0;
+  background-color: #d1d9eb;
+  outline: none;
+  border-style: none;
+  border-radius: 100%;
+  margin: auto;
+  box-shadow: 1vh 1vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+     -0.5vh -0.5vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+}
+#erase{
+  height: 7vh;
+  width: 9vw;
+  position: absolute;
+  left: 25vw;
+  top: 0;
+  bottom: 0;
+  background-color: #d1d9eb;
+  outline: none;
+  border-style: none;
+  border-radius: 100%;
+  margin: auto;
+  box-shadow: 1vh 1vh 2vh -0.5vh rgba(0, 0, 0, 0.15),
+    -0.5vh -0.5vh 2vh -0.5vh rgba(255, 255, 255, 0.7);
+}
+#clrbtn:active{
+  background-color: yellow;
+}
